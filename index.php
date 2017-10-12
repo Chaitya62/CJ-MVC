@@ -7,7 +7,6 @@ require('./controller/Test.php');
 // domain(localhost)/app_name/index.php/Controller_name/function/args..../
 
 
-
 function getArgumentStart($uri){
 		foreach ($uri as $key => $value){
 			if($value == 'index.php'){
@@ -43,7 +42,5 @@ function main(){
 }
 
 main();
-
-
 
 ?>
