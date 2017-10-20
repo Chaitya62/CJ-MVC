@@ -4,7 +4,7 @@ $url = parse_url($_SERVER['REQUEST_URI']);
 print_r($url);
 
 
-$result = split('/', $url['path']);
+$result = explode('/', $url['path']);
 print_r($result);
 
 
@@ -41,7 +41,7 @@ class TEST{
 	}
 
 	function asdf($a, $b){
-		echo "<br />"."Inside test";
+		echo "<br />"."Inside test<br>";
 	}
 }
 

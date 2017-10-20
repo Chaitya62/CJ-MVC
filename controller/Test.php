@@ -1,5 +1,5 @@
 <?php
-require(__DIR__.'/../model/TestModel.php');
+require_once(__DIR__.'/../model/TestModel.php');
 
 class Test{
 
@@ -8,10 +8,11 @@ class Test{
 		$this->test_model = new TestModel();
 	}
 
-	function hello($name){
+	function hello(...$args){
 		$result = $this->test_model->select();
 		while($row = $result->fetch_assoc()){
-			print_r($row);
+			print_r($args);
+
 			echo "<br/>";
 		}
 	}

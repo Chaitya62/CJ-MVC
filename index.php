@@ -1,6 +1,12 @@
 <?php 
+//for me , without this setting its not showing error // so will comment if not needed ,dont remove
+/*ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 'On'); */
+
+
 // include all controllers here
-require('./controller/Test.php');
+// require('./controller/Test.php');
+require('./controller/User.php');
 
 
 // call the controllers using 
@@ -18,10 +24,12 @@ function getArgumentStart($uri){
 
 
 function main(){
-	$uri = parse_url($_SERVER['REQUEST_URI']);
-	$parameters = split('/', $uri['path']);
-	// get query using $uri['query'] // TODO
 
+	$uri = parse_url($_SERVER['REQUEST_URI']);
+
+	//new php version have issue with split so using explode instead	
+	$parameters = explode('/', $uri['path']);
+	// get query using $uri['query'] // TODO
 	$start = getArgumentStart($parameters);
 	if($start != -1){
 		$controller_name = $parameters[$start];
@@ -32,7 +40,9 @@ function main(){
 		for(;$start < count($parameters); $start++){
 			array_push($args, $parameters[$start]);
 		}
+		
 		call_user_func_array(array(new $controller_name, $function_name), $args);
+
 
 	}else{
 		echo "404 not found";
