@@ -1,6 +1,5 @@
 <?php 
 
-require_once(__DIR__.'/../test_core/CJ_Model.php');
 require_once(__DIR__.'/../model/UserModel.php');
 
 class User{
@@ -19,6 +18,7 @@ function hello(){
 //http://localhost/CJ-MVC/index.php/User/getAll/
 function getAll(){
 	$result = $this->model->get_all();
+	print_r($result);
 	echo json_encode($result);
 }
 
