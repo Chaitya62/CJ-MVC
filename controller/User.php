@@ -1,8 +1,9 @@
 <?php 
 
 require_once(__DIR__.'/../model/UserModel.php');
+require_once(__DIR__.'/../core/CJ_Controller.php');
 
-class User{
+class User extends CJ_Controller{
 
 function __construct(){
 	echo 'user controller CLASS CREATED '."<br />";

@@ -1,1 +1,5 @@
-home.php
+<?php 
+
+echo $content;
+
+?>

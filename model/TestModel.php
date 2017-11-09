@@ -9,7 +9,7 @@ class TestModel extends CJ_Model {
 	}
 
 	function sayHello($name){
-		echo "You did it, ". $name;
+		echo "Welcome to  ". $name;
 	}
 
 
