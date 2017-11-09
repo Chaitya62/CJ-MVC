@@ -10,13 +10,13 @@ function __construct(){
 
 }
 
-function hello(){
+function hello_get(){
 	echo "Hello, World!";
 }
 
 
 //http://localhost/CJ-MVC/index.php/User/getAll/
-function getAll(){
+function getAll_get(){
 	$result = $this->model->get_all();
 	print_r($result);
 	echo json_encode($result);
@@ -24,7 +24,7 @@ function getAll(){
 
 
 //http://localhost/CJ-MVC/index.php/User/get/2/
-function get($id){
+function get_get($id){
 
 	$result = $this->model->get($id);
 	echo json_encode($result);

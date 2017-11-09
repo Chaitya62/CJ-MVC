@@ -7,6 +7,9 @@ ini_set('display_errors', 'On'); */
 // include all controllers here
 // require('./controller/Test.php');
 require('./controller/User.php');
+require('./controller/Question.php');
+require('./controller/Answer.php');
+require('./controller/Feeds.php');
 
 
 // call the controllers using 
@@ -33,8 +36,8 @@ function main(){
 	$start = getArgumentStart($parameters);
 	if($start != -1){
 		$controller_name = $parameters[$start];
-		
-		 $function_name = $parameters[$start+1];
+
+		$function_name = $parameters[$start+1] . "_" . strtolower($_SERVER['REQUEST_METHOD']); 
 		$start+=2;
 		$args = array();
 		for(;$start < count($parameters); $start++){

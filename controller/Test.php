@@ -8,7 +8,7 @@ class Test{
 		$this->test_model = new TestModel();
 	}
 
-	function hello(...$args){
+	function hello_get(...$args){
 		$result = $this->test_model->select();
 		while($row = $result->fetch_assoc()){
 			print_r($args);
