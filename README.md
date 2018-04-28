@@ -54,12 +54,12 @@ also replace the constructor accordingly
 
 ### Model
 
-To create you own model copy the `TestModel.php` file in the models directory.
+To create your own model copy the `TestModel.php` file in the models directory.
 For further examples on using model see the usage in `User.php`
 
 ### Views
 
-To create you own view just create simple php views and load it using `load_view` function in the controller
+To create your own view just create simple php views and load it using `load_view` function in the controller
 
 ```php
 $this->load_view('<view name>', <associative array for variables you need in the view>)
