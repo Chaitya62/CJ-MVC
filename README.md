@@ -28,6 +28,9 @@ git clone https://github.com/Chaitya62/CJ-MVC.git
 
 Download it and place it in the `htdocs` equivalent of your server.
 
+Edit the `database.php` inside config folder to connect it to your sql database.
+
+
 
 ### How it works
 The MVC follows a [CodeIgniter](https://codeigniter.com/) like url structure.
