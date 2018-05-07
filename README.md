@@ -72,16 +72,15 @@ $this->load_view('<view name>', <associative array for variables you need in the
 That's it you are ready to roll and create the next best site.
 
 
-[Here](https://chaitya62.github.io/2018/04/29/Writing-your-own-MVC-from-Scratch-in-PHP.html) is a blog post explaining this in detail.
 
-## Sawal
+## Sawaal
 
 An app created using this framework
 [demo](https://testemailkjsce.000webhostapp.com/Forum/frontend/dist/index.html#/) [github](https://github.com/Chaitya62/Forum)
 
 > For more details on how the framework works go through the given example files in `controller`, `model` and `view` folders. 
 
-
+[Here](https://chaitya62.github.io/2018/04/29/Writing-your-own-MVC-from-Scratch-in-PHP.html) is a blog post explaining this in detail.
 
 
 ## Help Us
